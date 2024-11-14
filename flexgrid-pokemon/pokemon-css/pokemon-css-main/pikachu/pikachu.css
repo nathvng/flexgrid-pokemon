@@ -1,0 +1,137 @@
+body{
+    background-color: #ffe600;
+    font-size: 100PX;
+}
+
+#pikachu{
+    position:absolute;
+    width: 4.2em;
+    height: 2.35em;
+    left:33%;
+    top:33%;
+}
+.olho{
+    width: .57em;
+    height: .57em;
+    border: .03em solid black;
+    background: #2e2e2e;
+    border-radius: 100%;
+    position:absolute;
+    margin-left: .6em;
+}
+.olho:after {
+    width: .25em;
+    height: .25em;
+    border: .03em solid black;
+    background: #fff;
+    content: '';
+    display:block;
+    position: absolute;
+    border-radius: 100%;
+    margin-left: .07em;
+    margin-top: -.02em;
+}  
+.olho.direito {
+    right: .6em;
+}
+.nariz {
+    position:absolute;
+    margin: .3em calc(50% - .11em);
+    margin-top: .38em;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border-top: .09em solid black;
+    border-left: .11em solid transparent;
+    border-right: .12em solid transparent;
+    box-shadow: 0 - .01em 0 black;
+
+}
+.nariz:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: .20em;
+    height: .05em;
+    background: black;
+    border-top-left-radius: .12em .05em;
+    border-top-right-radius: .11em .05em;
+    margin-top: -.12em;
+    margin-left: -.10em;
+}
+.boca{
+    position: absolute;
+    width: 2.28em;
+    height: 1.8em;
+    margin-top: .65em;
+    margin-left: calc(50% - 1.18em);
+    overflow: hidden;
+}
+.boca:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: .8em;
+    height: .25em;
+    background: #ffe600;
+    border: .03em solid black;
+    border-top: none;
+    border-left: none;
+    right: .28em;
+    top: -.05em;
+    border-bottom-right-radius: .6em .3em;
+    box-shadow: 0 -.1em 0 #ffe600, -.05 -.03em 0 #ffe600;
+}
+
+.boca:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: .8em;
+    height: .25em;
+    background: #ffe600;
+    border: .03em solid black;
+    border-top: none;
+    border-right: none;
+    left: .35em;
+    top: -.05em;
+    border-bottom-left-radius: .7em .3em;
+    box-shadow: 0 -.1em 0 #ffe600, -.05 -.03em 0 #ffe600;
+    z-index: 1;
+}
+.boca>div {
+    position: absolute;
+    background: #FF485F;
+    width: 2.30em;
+    height: 8em;
+    border: .04em solid black;
+    border-bottom-left-radius: 1.19em 8em;
+    border-bottom-right-radius: 1.19em 8em;
+    margin-top: -6.43em;
+    overflow: hidden;
+}
+
+.boca>div:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1.4em;
+    height: 1.0em;
+    box-shadow: 0 -.7em 0 #9B000A;
+    bottom: .36em;
+    margin-left: .49em;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.bochecha {
+    width: .8em;
+    height: .8em;
+    border: .03em solid black;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 4.0rem;
+    background: #f00
+}
+.bochecha.direita {
+    right: 0;
+}
